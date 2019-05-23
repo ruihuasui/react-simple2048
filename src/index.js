@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Board2048 from './board.js';
 import {
-  matrixAt, 
   setMatrix, 
   getRandomNum, 
   move, 
-  isFull
 } from './matrix.js';
 import './index.css';
 
