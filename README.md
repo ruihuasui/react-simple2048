@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br/>
 
-Enjoy the [Simple 2048](http://ruihuasui.github.io/simple2048) 
+Enjoy the [Simple 2048](http://ruihuasui.github.io/simple-2048) 
 <image src="https://github.com/ruihuasui/simple2048/blob/master/public/favicon.ico"/>
 on computers and mobiles!
 
