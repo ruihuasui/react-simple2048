@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactTouchEvents from "react-touch-events";
 import Board2048 from './board.js';
 import {
   matrixAt, 
