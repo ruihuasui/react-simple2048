@@ -7,9 +7,6 @@ html, body {
     background: #faf8ef;
     color: #776e65
   }
-
-  body {
-    margin: 80px 0; }
   
   ol, ul {
     padding-left: 30px;
@@ -22,21 +19,27 @@ html, body {
     top: 50%;
     left: 50%;
     margin-left: -223px;
-    margin-top: -345px;
-    -webkit-animation: fade-in 800ms ease 1200ms;
-    -moz-animation: fade-in 800ms ease 1200ms;
-    animation: fade-in 800ms ease 1200ms;
-    -webkit-animation-fill-mode: both;
-    -moz-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
+    margin-top: -345px;}
+    @media screen and (max-width: 520px) {
+      .gameContainer {
+        width: 280px;
+        height: 300px;
+        margin-left: -140px;
+        top: 0%;
+        margin-top: 30px;
+      }
+    }
 
   .game-intro {
     float: left;
     height: 32px;
     margin-bottom: 0; 
-    font-size: 17px;
-  }
+    font-size: 17px;}
+    @media screen and (max-width: 520px) {
+      .game-intro {
+        font-size: 13px;
+      }
+    }
 
   .restart-button {
     background: #8f7a66;
@@ -50,38 +53,74 @@ html, body {
     line-height: 32px;
     display: block;
     text-align: center;
-    float: right;
-  }
+    float: right;}
+    @media screen and (max-width: 520px) {
+      .restart-button {
+        height: 16px;
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
 
   .buttonContainer:after {
     content: "";
     display: block;
-    clear: both;
-  }
+    clear: both;}
+
+  .text2048 {
+    text-align: center;
+    color: #776e65;
+    font-size: 70px;
+    font-weight: bold;}
+    @media screen and (max-width: 520px) {
+      .text2048 {
+        font-size: 40px;
+      }
+    }
+
+  .howToPlay {
+    margin-left: 15px;
+    background-color: #faf8ef;
+    border-radius: 5px;
+    border: 3px solid #faf8ef;}
+    @media screen and (max-width: 520px) {
+      .howToPlay {
+        font-size: 10px;
+      }
+    }
 
   .header {
     margin-left: 10px;
     text-align: center;
-    width: 300px;
+    width: 350px;
     border: 10px solid #faf8ef;
     border-radius: 30px;
-    height: 100px;
+    min-height: 100px;
     background: #d3c60f70;
-    font-size: 70px;
-    font-weight: bold;
-    color: #776e65;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box;}
+    @media screen and (max-width: 520px) {
+      .header {
+        border-radius: 20px;
+        min-height: 55px;
+        margin-left: 5px;
+        width: 250px;
+      }
+    }
 
   .board {
     margin-top: 5px;
     width: 415px;
     height: 465px;
     background: #bbada0;
-    border-radius: 20px;
-  }
+    border-radius: 10px;}
+    @media screen and (max-width: 520px) {
+      .board {
+        width: 275px;
+        height: 300px;
+      }
+    }
   
   .board-row {
     clear: both;
@@ -89,46 +128,70 @@ html, body {
     display: table;
   }
 
+  .number {
+    margin-top: 27px;}
+    @media screen and (max-width: 520px) {
+      .number {
+        margin-top: 14px;
+      }
+    }
+
+
   .square {
     background: rgba(238, 228, 218, 0.35);
     float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
+    width: 90px;
     height: 90px;
     margin-left: 11px;
     margin-top: 11px;
     padding: 0;
     text-align: center;
-    width: 90px;
-    border-radius: 5px;
-  }
+    border-radius: 5px;}
+    @media screen and (max-width: 520px) {
+      .square {
+        width: 60px;
+        height: 60px;
+        margin-left: 7px;
+        margin-top: 7px;
+      }
+    }
 
   .active-square {
-    flex-direction: column;
-    background: rgb(226, 160, 83);
     float: left;
     font-size: 50px;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
     line-height: 34px;
     height: 90px;
     width: 90px;
     margin-left: 11px;
     margin-top: 11px;
-    /* padding: 0; */
     text-align: center;
-    border-radius: 5px;
-  }
+    border-radius: 5px;}
+    @media screen and (max-width: 520px) {
+      .active-square {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        margin-left: 7px;
+        margin-top: 7px;
+      }
+    }
 
   .score-board {
     font-size: 30px;
     background: rgb(238, 217, 160);
     width: 395px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 17px;
     text-align: center;
-    border: 10px solid #bbada0;
-  }
+    border: 10px solid #bbada0;}
+    @media screen and (max-width: 520px) {
+      .score-board {
+        width: 261px;
+        height: 25px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: 7px solid #bbada0;
+      }
+    }
   

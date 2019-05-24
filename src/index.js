@@ -5,6 +5,7 @@ import {
   setMatrix, 
   getRandomNum, 
   move, 
+  selectAction,
 } from './matrix.js';
 import './index.css';
 
@@ -33,10 +34,12 @@ class Game extends React.Component {
     this.swiping = false;
 
     this.state = {
-      matrix  : Array(16).fill(0),
+      matrix  : Array(16).fill(0), 
       score   : 0,
       canMove : true,
       full    : false,
+      win2048 : false,
+      win4096 : false,
     };
   }
 
@@ -51,18 +54,7 @@ class Game extends React.Component {
 
   _onTouchEnd(e) {
     if (!this.swiping) return;
-    var action = 0;
-    var diffX = e.changedTouches[0].clientX - tsX;
-    var diffY = e.changedTouches[0].clientY - tsY;
-    var AbsX = Math.abs(diffX);
-    var AbsY = Math.abs(diffY);
-    if (AbsX > AbsY) {
-      if (diffX < 0) action = 3;
-      else action = 1;
-    } else {
-      if (diffY < 0) action = 0;
-      else action = 2;
-    }
+    const action = selectAction(e, tsX, tsY);
     const matrix_ = this.state.matrix.slice();
     var score_ = this.state.score;
     const result = move(matrix_, action, score_);
@@ -73,6 +65,8 @@ class Game extends React.Component {
       matrix  : result.matrix_, 
       score   : result.score_,
       full    : result.full,
+      win2048 : result.win2048,
+      win4096 : result.win4096,
     });
   }
 
@@ -86,6 +80,8 @@ class Game extends React.Component {
       matrix  : result.matrix_, 
       score   : result.score_,
       full    : result.full,
+      win2048 : result.win2048,
+      win4096 : result.win4096,
     });
   }
 
@@ -95,6 +91,8 @@ class Game extends React.Component {
       score   : 0,
       canMove : true,
       full    : false,
+      win2048 : false,
+      win4096 : false,
     }); 
     start = true;
   };
@@ -125,6 +123,8 @@ class Game extends React.Component {
           score={this.state.score} 
           full={this.state.full} 
           canMove={this.state.canMove}
+          win2048={this.state.win2048}
+          win4096={this.state.win4096}
           restartButton={
             <a 
               className="restart-button"

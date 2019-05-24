@@ -31,12 +31,37 @@ export function isFull(matrix) {
     return true;
 }
 
+export function win(matrix) {
+  var win2048 = false, win4096 = false;
+  for (var i = 0; i < 16; i++) {
+    if (matrix[i] === 2048) win2048 = true;
+    if (matrix[i] === 4096) win4096 = true;
+  }
+  return {win2048, win4096};
+}
+
 export function isEqual(matrix1, matrix2) {
     if (matrix1.length !== matrix2.length) return true;
     for (var i = 0; i < matrix1.length; i++) {
         if (matrix1[i] !== matrix2[i]) return true;
     }
     return false;
+}
+
+export function selectAction(e, tsX, tsY) {
+  var action = 0;
+    var diffX = e.changedTouches[0].clientX - tsX;
+    var diffY = e.changedTouches[0].clientY - tsY;
+    var AbsX = Math.abs(diffX);
+    var AbsY = Math.abs(diffY);
+    if (AbsX > AbsY) {
+      if (diffX < 0) action = 3;
+      else action = 1;
+    } else {
+      if (diffY < 0) action = 0;
+      else action = 2;
+    }
+    return action;
 }
 
 export function move(matrix, action, score_) {
@@ -134,6 +159,8 @@ export function move(matrix, action, score_) {
 
     var full = isFull(matrix_);
     var canMove = isEqual(matrix, matrix_);
+    var win_ = win(matrix_);
+    var win2048 = win_.win2048, win4096 = win_.win4096;
 
-    return {matrix_, score_, full, canMove};
+    return {matrix_, score_, full, canMove, win2048, win4096};
 }
