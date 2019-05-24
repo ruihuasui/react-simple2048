@@ -22,9 +22,9 @@ function Square(props) { // active or not
       case 128  : return {background: '#edcf72', color: '#f9f6f2'};
       case 256  : return {background: '#edcc61', color: '#f9f6f2'};
       case 512  : return {background: '#edc850', color: '#f9f6f2', 'box-shadow': '0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286)' };
-      case 1024 : return {background: '#edc53f', color: '#f9f6f2', 'font-size': '25px', 'box-shadow': '0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048)'};
-      case 2048 : return {background: '#edc22e', color: '#f9f6f2', 'font-size': '25px'};
-      case 4096 : return {background: '#edc850', color: '#f9f6f2', 'font-size': '25px'};
+      case 1024 : return {background: '#edc53f', color: '#f9f6f2', 'font-size': fontSize_, 'box-shadow': '0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048)'};
+      case 2048 : return {background: '#edc22e', color: '#f9f6f2', 'font-size': fontSize_};
+      case 4096 : return {background: '#edc850', color: '#f9f6f2', 'font-size': fontSize_};
     }
   }
   return (
