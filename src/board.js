@@ -6,6 +6,7 @@ var display_ = 'none';
 var marginLeft_number = (window.innerWidth <= 520) ? 
                         Math.floor((window.innerWidth - 275)/2) : 
                         Math.floor(window.innerWidth - 415)/2;
+var fontSize_ = (window.innerWidth <= 520) ? '25px' : '36px';
 var marginLeft_ = parseInt(marginLeft_number) + 'px';
 
 function Square(props) { // active or not 
