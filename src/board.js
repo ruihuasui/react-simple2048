@@ -78,9 +78,9 @@ export default class Board2048 extends React.Component {
             </a>
 
             <div style={{display: display_}}>
-              💻 <strong>Computer User</strong> can use key 
-                <strong>'w,a,s,d' or 'arrow keys'</strong> to move the tiles.<br/>
-              📱 <strong>Mobile User</strong> can <strong>swipe the screen</strong> to move tiles.
+              💻 <strong>Computer Users</strong> can use key 
+                <strong> 'w,a,s,d' or 'arrow keys'</strong> to move the tiles.<br/>
+              📱 <strong>Mobile Users</strong> can <strong>swipe the screen</strong> to move the tiles.
             </div>
           </div>
           {this.props.restartButton}
