@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-simple2048/static/css/main.cad912cb.chunk.css",
-    "main.js": "/react-simple2048/static/js/main.9d3b13da.chunk.js",
-    "main.js.map": "/react-simple2048/static/js/main.9d3b13da.chunk.js.map",
+    "main.js": "/react-simple2048/static/js/main.b3107e30.chunk.js",
+    "main.js.map": "/react-simple2048/static/js/main.b3107e30.chunk.js.map",
     "runtime~main.js": "/react-simple2048/static/js/runtime~main.9bdcadfa.js",
     "runtime~main.js.map": "/react-simple2048/static/js/runtime~main.9bdcadfa.js.map",
     "static/js/2.0f58faaa.chunk.js": "/react-simple2048/static/js/2.0f58faaa.chunk.js",
     "static/js/2.0f58faaa.chunk.js.map": "/react-simple2048/static/js/2.0f58faaa.chunk.js.map",
     "index.html": "/react-simple2048/index.html",
-    "precache-manifest.e0a67c76d3cea3e62bfef8a257582723.js": "/react-simple2048/precache-manifest.e0a67c76d3cea3e62bfef8a257582723.js",
+    "precache-manifest.af2006759e3916058150050b917efff4.js": "/react-simple2048/precache-manifest.af2006759e3916058150050b917efff4.js",
     "service-worker.js": "/react-simple2048/service-worker.js",
     "static/css/main.cad912cb.chunk.css.map": "/react-simple2048/static/css/main.cad912cb.chunk.css.map"
   }
