@@ -3,6 +3,11 @@ import {matrixAt} from './matrix.js';
 
 var display_ = 'none';
 
+var marginLeft_number = (window.innerWidth <= 520) ? 
+                        Math.floor((window.innerWidth - 275)/2) : 
+                        Math.floor(window.innerWidth - 415)/2;
+var marginLeft_ = parseInt(marginLeft_number) + 'px';
+
 function Square(props) { // active or not 
   const name=(props.value) ? "active-square" : "square";
   function color(value) { 
@@ -64,7 +69,7 @@ export default class Board2048 extends React.Component {
 
   render() {
     return (
-      <div className="gameContainer">
+      <div className="gameContainer" style={{marginLeft: marginLeft_}}>
           <div className="header">
             <text className="text2048">2 0 4 8</text>
             <a 
@@ -89,7 +94,7 @@ export default class Board2048 extends React.Component {
           </div>
           
 
-          <div className="board" >
+          <div id="fixed" className="board" >
               <div className="board-row">
                   {this.renderSquare(0)}
                   {this.renderSquare(1)}

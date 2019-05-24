@@ -3,9 +3,8 @@ html, body {
     padding: 0;
     font: 14px "Century Gothic", Futura, sans-serif;
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-    margin: 20px;
     background: #faf8ef;
-    color: #776e65
+    color: #776e65;
   }
   
   ol, ul {
@@ -13,21 +12,15 @@ html, body {
   }
 
   .gameContainer {
-    position: absolute;
+    position: fixed;
     width: 415px;
-    height: 585px;
-    top: 50%;
-    left: 50%;
-    margin-left: -223px;
-    margin-top: -345px;}
+    min-height: 700px;
+    overflow: scroll;
+    margin-top: 20px;}
     @media screen and (max-width: 520px) {
       .gameContainer {
         width: 280px;
-        height: 300px;
-        margin-left: -140px;
-        top: 0;
-        bottom: 0;
-        margin-top: 30px;
+        min-height: 427px;
       }
     }
 
@@ -111,7 +104,6 @@ html, body {
     }
 
   .board {
-    margin-top: 5px;
     width: 415px;
     height: 465px;
     background: #bbada0;
@@ -119,7 +111,7 @@ html, body {
     @media screen and (max-width: 520px) {
       .board {
         width: 275px;
-        height: 300px;
+        height: 307px;
       }
     }
   
