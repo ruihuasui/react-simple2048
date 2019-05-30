@@ -6,10 +6,10 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 function RouterBar(props) {
   return (
-    <Router>
-      <div>
-        <Navbar bg="light" variant="light">
-          <Navbar.Brand href="/">Simple 2048</Navbar.Brand>
+    <Router >
+      <div >
+        <Navbar bg="light" variant="light" >
+          <Navbar.Brand href="/react-simple2048/">Simple 2048</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="https://ruihuasui.github.io/react-gobang/">Gobang</Nav.Link>
             <Nav.Link href="/">Simple 2048</Nav.Link>
@@ -19,7 +19,7 @@ function RouterBar(props) {
             <Button variant="outline-info">Search</Button>
           </Form>
         </Navbar>
-        <Route exact path="/" component={Game} />
+        <Route exact path="/react-simple2048/" component={Game} />
       </div>
     </Router>
   )
