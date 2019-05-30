@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Button, Card, ListGroup, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import {matrixAt} from './matrix.js';
 import {Square} from './square.js'
 
@@ -45,7 +46,7 @@ export default class Board2048 extends React.Component {
       <div className="gameContainer" style={{marginLeft: marginLeft_}}>
           <div className="header">
             <text className="text2048">2 0 4 8</text>
-            <a 
+            {/* <a 
               className="howToPlay" 
               onMouseOver={this._displayHowToPlay.bind(this)}
               onMouseOut={this._notDisplayHowToPlay.bind(this)}
@@ -59,7 +60,22 @@ export default class Board2048 extends React.Component {
               💻 <strong>Computer Users</strong> can use key 
                 <strong> 'w,a,s,d' or 'arrow keys'</strong> to move the tiles.<br/>
               📱 <strong>Mobile Users</strong> can <strong>swipe the screen</strong> to move the tiles.
-            </div>
+            </div> */}
+            <OverlayTrigger
+              key="bottom"
+              placement="bottom"
+              overlay={
+                <Tooltip id={`tooltip-${"bottom"}`}>
+                  💻 <strong>Computer Users</strong> can use key 
+                    <strong> 'w,a,s,d' or 'arrow keys'</strong> to move the tiles.<br/>
+                  📱 <strong>Mobile Users</strong> can <strong>swipe the screen</strong> to move the tiles.
+                </Tooltip>
+              }
+            >
+              <a className="howToPlay" >
+                How to Play
+              </a>
+            </OverlayTrigger>
           </div>
           {this.props.restartButton}
           <div className="buttonContainer">
