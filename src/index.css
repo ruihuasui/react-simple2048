@@ -199,8 +199,8 @@ html, body {
     border: 10px solid #bbada0;}
     @media screen and (max-width: 520px) {
       .score-board {
-        width: 271px;
-        height: 35px;
+        width: 275px;
+        height: 40px;
         border-radius: 10px;
         font-size: 20px;
         border: 7px solid #bbada0;
