@@ -9,7 +9,13 @@ function RouterBar(props) {
     <Router >
       <div >
         <Navbar bg="light" variant="light" >
-          <Navbar.Brand href="/react-simple2048/">Simple 2048</Navbar.Brand>
+          <Navbar.Brand href="/react-simple2048/">
+            <img
+              className="logo"
+              href="./images/logo.png"
+            />
+            {' '}Simple 2048
+          </Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="https://ruihuasui.github.io/react-gobang/">Gobang</Nav.Link>
             <Nav.Link href="/react-simple2048/">Simple 2048</Nav.Link>

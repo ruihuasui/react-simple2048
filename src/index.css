@@ -16,6 +16,16 @@ html, body {
     background-color: #bbada0;
   }
 
+  .logo {
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/logo.png');
+    display: inline-block;
+    box-align: top;
+    background-attachment: inherit;
+    background-position: -1px -2px;
+  }
+
   .gameContainer {
     margin: 0;
     font: 14px "Century Gothic", Futura, sans-serif;
