@@ -13,7 +13,8 @@ html, body {
   }
 
   .navBar {
-    background-color: #bbada0;
+    position: fixed;
+    overflow: scroll;
   }
 
   .logo {
@@ -58,7 +59,7 @@ html, body {
     border-radius: 3px;
     padding: 0 20px;
     text-decoration: none;
-    color: #f9f6f2;
+    color: #2e2b26;
     height: 30px;
     font-weight: bold;
     font-size: 17px;
