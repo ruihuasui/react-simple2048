@@ -1,7 +1,8 @@
 import React from 'react';
-import { Col, Button, Card, ListGroup, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import {matrixAt} from './matrix.js';
 import {Square} from './square.js'
+import './index.css'
 
 var display_ = 'none';
 var marginLeft_number = (window.innerWidth <= 520) ? 

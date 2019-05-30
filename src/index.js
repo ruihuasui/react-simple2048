@@ -3,6 +3,7 @@ import React from 'react'
 import Game from './game.js'
 import { Nav, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
+import './index.css'
 
 function RouterBar(props) {
   return (
