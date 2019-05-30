@@ -12,7 +12,7 @@ function RouterBar(props) {
           <Navbar.Brand href="/react-simple2048/">Simple 2048</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="https://ruihuasui.github.io/react-gobang/">Gobang</Nav.Link>
-            <Nav.Link href="/">Simple 2048</Nav.Link>
+            <Nav.Link href="/react-simple2048/">Simple 2048</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
