@@ -10,11 +10,8 @@ function RouterBar(props) {
     <Router >
       <div >
         <Navbar bg="light" variant="light" >
-          <Navbar.Brand href="/react-simple2048/">
-            <img
-              className="logo"
-              href="./images/logo.png"
-            />
+          <Navbar.Brand href="https://ruihuasui.github.io/react-forms/">
+            <img width="30" height="30" src={require('./logo.png')}/>
             {' '}Simple 2048
           </Navbar.Brand>
           <Nav className="mr-auto">
