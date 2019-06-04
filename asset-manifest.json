@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-simple2048/static/css/main.b65cdbbf.chunk.css",
-    "main.js": "/react-simple2048/static/js/main.be41b425.chunk.js",
-    "main.js.map": "/react-simple2048/static/js/main.be41b425.chunk.js.map",
+    "main.js": "/react-simple2048/static/js/main.54c5bd79.chunk.js",
+    "main.js.map": "/react-simple2048/static/js/main.54c5bd79.chunk.js.map",
     "runtime~main.js": "/react-simple2048/static/js/runtime~main.9bdcadfa.js",
     "runtime~main.js.map": "/react-simple2048/static/js/runtime~main.9bdcadfa.js.map",
     "static/js/2.f2d1dc33.chunk.js": "/react-simple2048/static/js/2.f2d1dc33.chunk.js",
     "static/js/2.f2d1dc33.chunk.js.map": "/react-simple2048/static/js/2.f2d1dc33.chunk.js.map",
     "index.html": "/react-simple2048/index.html",
-    "precache-manifest.a388930276c9d9c6b4e03b573d5f4cdf.js": "/react-simple2048/precache-manifest.a388930276c9d9c6b4e03b573d5f4cdf.js",
+    "precache-manifest.7395b52a8d951e86e93d93d56af44e3d.js": "/react-simple2048/precache-manifest.7395b52a8d951e86e93d93d56af44e3d.js",
     "service-worker.js": "/react-simple2048/service-worker.js",
     "static/css/main.b65cdbbf.chunk.css.map": "/react-simple2048/static/css/main.b65cdbbf.chunk.css.map",
     "static/media/logo.png": "/react-simple2048/static/media/logo.3699bae0.png"
