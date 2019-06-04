@@ -12,7 +12,7 @@ function RouterBar(props) {
         <Navbar bg="light" variant="light" >
           <Navbar.Brand href="https://ruihuasui.github.io/react-forms/">
             <img width="30" height="30" src={require('./logo.png')}/>
-            {' '}Simple 2048
+            {' '}AirApp
           </Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="https://ruihuasui.github.io/react-gobang/">Gobang</Nav.Link>
